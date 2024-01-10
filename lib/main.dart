@@ -21,11 +21,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 251, 0, 0),
+        title: const SizedBox(
+          height: 50,
+          child: Text('Home'),
+        ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 50, top: 50, right: 50),
+        padding: const EdgeInsets.only(
+          left: 50,
+          top: 50,
+          right: 50,
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,7 +51,9 @@ class HomePage extends StatelessWidget {
                 color: Colors.amber,
                 child: const Text(
                   'heloasdddddddddddddddd dssssssssssss dsafasdfas da asd sd sa fsd asd asdasdas',
-                  style: TextStyle(color: Color.fromARGB(255, 192, 3, 255)),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 192, 3, 255),
+                  ),
                 ),
               ),
             ),
