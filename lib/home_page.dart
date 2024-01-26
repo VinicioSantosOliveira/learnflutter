@@ -5,6 +5,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const size = 200.0;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 251, 0, 0),
@@ -55,6 +57,11 @@ class HomePage extends StatelessWidget {
             const Text(
               'Masterclass',
               textDirection: TextDirection.ltr,
+            ),
+            Container(
+              width: size,
+              height: size,
+              color: Colors.black,
             ),
           ],
         ),
