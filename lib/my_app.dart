@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learnflutter/animated_page.dart';
-import 'home_page.dart';
+import 'package:learnflutter/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: AnimatedPage(),
+      home: HomePage(),
     );
   }
 }

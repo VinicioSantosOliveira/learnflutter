@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/custom_buttom.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,21 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 251, 0, 0),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(left: 10, right: 250),
-            child: Text(
-              'Home',
-              style: TextStyle(
-                color: Color.fromARGB(255, 197, 231, 7),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(right: 30),
-            child: Text('Voltar'),
-          ),
-        ],
+        title: const Text('Home'),
       ),
       body: Padding(
         padding: const EdgeInsets.only(
@@ -62,6 +49,10 @@ class HomePage extends StatelessWidget {
               width: size,
               height: size,
               color: Colors.black,
+            ),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CustomButtom(),
             ),
           ],
         ),
