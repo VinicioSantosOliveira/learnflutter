@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/custom_buttom.dart';
 
+import 'switch_widget.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const size = 200.0;
+    const size = 100.0;
 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 251, 0, 0),
         title: const Text('Home'),
+        automaticallyImplyLeading: false,
       ),
       body: Padding(
         padding: const EdgeInsets.only(
@@ -54,6 +57,7 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
               child: CustomButtom(),
             ),
+            SwitchWidget(),
           ],
         ),
       ),
