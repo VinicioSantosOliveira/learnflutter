@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/custom_buttom.dart';
+import 'package:learnflutter/page_view_widget.dart';
 
 import 'switch_widget.dart';
 
@@ -22,43 +23,49 @@ class HomePage extends StatelessWidget {
           top: 50,
           right: 50,
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 50,
-              width: 50,
-              color: const Color.fromARGB(255, 0, 13, 255),
-            ),
-            SizedBox(
-              width: 300,
-              height: 300,
-              child: Container(
-                color: Colors.amber,
-                child: const Text(
-                  'heloasdddddddddddddddd dssssssssssss dsafasdfas da asd sd sa fsd asd asdasdas',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 192, 3, 255),
+        child: ListView.builder(
+          itemCount: 1,
+          itemBuilder: (context, index) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: const Color.fromARGB(255, 0, 13, 255),
+                ),
+                SizedBox(
+                  width: 300,
+                  height: 300,
+                  child: Container(
+                    color: Colors.amber,
+                    child: const Text(
+                      'heloasdddddddddddddddd dssssssssssss dsafasdfas da asd sd sa fsd asd asdasdas',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 192, 3, 255),
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ),
-            const Text(
-              'Masterclass',
-              textDirection: TextDirection.ltr,
-            ),
-            Container(
-              width: size,
-              height: size,
-              color: Colors.black,
-            ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: CustomButtom(),
-            ),
-            SwitchWidget(),
-          ],
+                const Text(
+                  'Masterclass',
+                  textDirection: TextDirection.ltr,
+                ),
+                Container(
+                  width: size,
+                  height: size,
+                  color: Colors.black,
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: CustomButtom(),
+                ),
+                const SwitchWidget(),
+                const PageViewWidget(),
+              ],
+            );
+          },
         ),
       ),
       floatingActionButton: FloatingActionButton(
