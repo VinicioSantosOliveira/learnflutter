@@ -18,11 +18,9 @@ class _AnimatedPageState extends State<CustomButtom> {
           children: [
             GestureDetector(
               onTap: () {
-                setState(
-                  () {
-                    isSelected = !isSelected;
-                  },
-                );
+                setState(() {
+                  isSelected = !isSelected;
+                });
               },
               child: Container(
                 height: 60,
