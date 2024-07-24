@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learnflutter/custom_buttom.dart';
-import 'package:learnflutter/page_view_widget.dart';
+import 'package:learnflutter/src/widgets/custom_buttom_widget.dart';
+import 'package:learnflutter/src/widgets/page_view_widget.dart';
 
-import 'switch_widget.dart';
+import '../widgets/switch_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -34,9 +34,7 @@ class _AnimatedPageState extends State<CustomButtom> {
                   child: AnimatedAlign(
                     duration: const Duration(milliseconds: 250),
                     curve: Curves.bounceOut,
-                    alignment: isSelected
-                        ? Alignment.centerRight
-                        : Alignment.centerLeft,
+                    alignment: isSelected ? Alignment.centerRight : Alignment.centerLeft,
                     child: AnimatedContainer(
                       duration: const Duration(microseconds: 250),
                       height: 50,
